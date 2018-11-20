@@ -32,8 +32,13 @@ Route::get('/', function () {
    // \App\Post::destroy(15);
    // \App\Post::destroy(17,18,19);
 
-    $fourthPost=\App\Post::find(4);
-    dd($fourthPost);
-    $lastPost=\App\Post::orderBy('id','DESC')->first();
-dd($lastPost);
+    //$fourthPost=\App\Post::find(4);
+    //dd($fourthPost);
+    //$lastPost=\App\Post::orderBy('id','DESC')->first();
+//dd($lastPost);
+    $post=\App\Post::find(10);
+    foreach($post->comments as $comment){
+        echo$comment->content.'<br>';
+    }
+
 });
