@@ -17,4 +17,7 @@ Route::get('/', function () {
         'title' => 'test title',
         'content' => 'test content',
     ]);
+    $posts=\App\Post::all();
+    dd($posts);
+
 });
