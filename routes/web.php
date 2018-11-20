@@ -30,5 +30,10 @@ Route::get('/', function () {
     //$post=\App\Post::find(14);
     //$post->delete();
    // \App\Post::destroy(15);
-    \App\Post::destroy(17,18,19);
+   // \App\Post::destroy(17,18,19);
+    $allPosts=\App\Post::all();
+    dd($allPosts);
+    $featuredPosts=\App\Post::where('is_feature',1)->get();
+dd($featuredPosts);
+
 });
