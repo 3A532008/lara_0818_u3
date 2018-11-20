@@ -23,9 +23,10 @@ Route::get('/', function () {
     //dd($post);
     //$posts=\App\Post::where('id','<',10)->orderBy('id','DESC')->get();
 //dd($posts);
-    $post=\App\Post::find(1);
-    $post->title='savedtitle';
-    $post->content='savedcontent';
-    $post->save();
-
+    //$post=\App\Post::find(1);
+   // $post->title='savedtitle';
+   // $post->content='savedcontent';
+  //  $post->save();
+    $post=\App\Post::find(14);
+    $post->delete();
 });
