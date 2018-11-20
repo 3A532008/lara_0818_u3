@@ -17,7 +17,8 @@ Route::get('/', function () {
         'title' => 'test title',
         'content' => 'test content',
     ]);
-    $posts=\App\Post::all();
-    dd($posts);
-
+    //$posts=\App\Post::all();
+   // dd($posts);
+    $post=\App\Post::find(8);
+    dd($post);
 });
