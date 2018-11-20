@@ -29,5 +29,6 @@ Route::get('/', function () {
   //  $post->save();
     //$post=\App\Post::find(14);
     //$post->delete();
-    \App\Post::destroy(15);
+   // \App\Post::destroy(15);
+    \App\Post::destroy(17,18,19);
 });
